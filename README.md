@@ -1,4 +1,4 @@
-I have used the repository [Ege Aksoz](https://github.com/egeaksoz/fullstackapp) and his articleas a starting point. Thank you!
+I have used [Ege Aksoz's](https://github.com/egeaksoz/fullstackapp) repository and his articleas as a starting point. Thank you!
 
 ## INSTRUCTIONS
 
@@ -17,11 +17,13 @@ Push the image to my local docker-hub repository:
 
 Navigate to frontend folder and type:
 
-``` docker build -t mohammad67/fullstack_frontend . ```
+``` docker build -t mohammad67/fullstack_frontend:TAG . ```
 
 Push the image to my local docker-hub repository:
 
-``` docker push mohammad67/fullstack_frontend ```
+``` docker push mohammad67/fullstack_frontend:TAG ```
+
+It is good practice to tag the images for later tracking the deployment versions.
 
 ### Deploy kubernetes
 
