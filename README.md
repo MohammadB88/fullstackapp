@@ -1,4 +1,4 @@
-I have userd the repository [Ege Aksoz|https://github.com/egeaksoz/fullstackapp] and his articleas a starting point. Thank you!
+I have used the repository [Ege Aksoz](https://github.com/egeaksoz/fullstackapp) and his articleas a starting point. Thank you!
 
 ## INSTRUCTIONS
 
