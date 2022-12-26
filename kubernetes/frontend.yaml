@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: react-frontend
-        image: frontend:latest
-        imagePullPolicy: Never
+        image: mohammad67/fullstack_frontend:v1.0
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
 ---

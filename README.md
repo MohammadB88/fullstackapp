@@ -1,4 +1,4 @@
-For the article of this repo, please refer to: https://www.swtestacademy.com/deploy-full-stack-application-in-kubernetes/
+I have userd the repository [Ege Aksoz|https://github.com/egeaksoz/fullstackapp] and his articleas a starting point. Thank you!
 
 ## INSTRUCTIONS
 
@@ -6,24 +6,31 @@ For the article of this repo, please refer to: https://www.swtestacademy.com/dep
 
 Navigate to backend folder and type:
 
-``` docker build -t backend . ```
+``` docker build -t mohammad67/fullstack__backend:TAG . ```
+
+Push the image to my local docker-hub repository:
+
+``` docker push mohammad67/fullstack__backend:TAG ```
+
 
 ### Create frontend image
 
 Navigate to frontend folder and type:
 
-``` docker build -t frontend . ```
+``` docker build -t mohammad67/fullstack_frontend . ```
+
+Push the image to my local docker-hub repository:
+
+``` docker push mohammad67/fullstack_frontend ```
 
 ### Deploy kubernetes
 
-Navigate to kubernetes folder. 
+Navigate to kubernetes folder and deploy all ConfigMaps, deployments, and services for backend, frontend, and the database components using:
 
-Apply the kubernetes files in following order:
+``` kubectl apply -f . ```
 
-``` kubectl apply -f database.yaml ```
+Now the application is available from Controlplane on IP_react_service:PORT as:
 
-``` kubectl apply -f backend.yaml ```
-
-``` kubectl apply -f frontend.yaml ```
+``` curl http://IP_react_service:PORT ```
 
 Enjoy!
