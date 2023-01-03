@@ -35,4 +35,8 @@ Now the application is available from Controlplane on IP_react_service:PORT as:
 
 ``` curl http://IP_react_service:PORT ```
 
+In order to remove broken images, one can use below command:
+
+``` docker rmi $(docker images -a | grep "^<none>" | awk '{print $3}') ``` 
+
 Enjoy!
